@@ -1,0 +1,33 @@
+{
+    "name": "DateTime Delta Validation",
+    "description": "Create a function that will determine if the difference between two given date-times is at or within an arbitrary number of minutes of each other. The date-times will be input in the format of two integers: the date integer will be number of days since the unix epoch, and the time integer will be seconds since midnight. (This is how Pick D3 stores dates/times internally.)",
+    "version": "0.0.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Douglas Linsmeyer",
+            "email": "douglinsmeyer@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DLinsmeyer\\DateTimeDeltaValidator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DLinsmeyer\\DateTimeDeltaValidator\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
